@@ -1,0 +1,7 @@
+services:
+    Aurelienazerty.NoMixedContent.listener:
+        class: Aurelienazerty\NoMixedContent\event\listener
+        arguments:
+            - @config
+        tags:
+            - { name: event.listener }
