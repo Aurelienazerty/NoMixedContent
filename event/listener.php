@@ -59,8 +59,16 @@ class listener implements EventSubscriberInterface
 	public function switch_https($event)
 	{
 		$post_row = $event['post_row'];
-		$post_row['MESSAGE'] = str_replace('http://team-azerty.com', 'https://team-azerty.com', $post_row['MESSAGE']);
-		$post_row['MESSAGE'] = str_replace('http://www.team-azerty.com', 'https://www.team-azerty.com', $post_row['MESSAGE']);
+		
+		$in = array();
+		$out = array();
+		
+		$in[] = 'http://www.team-azerty.com'; $out[] = 'https://www.team-azerty.com';
+		$in[] = 'http://team-azerty.com'; $out[] = 'https://www.team-azerty.com';
+		/*$in[] = 'https://'; $out[] = '//';
+		$in[] = 'http://'; $out[] = '//';*/
+		
+		$post_row['MESSAGE'] = str_replace($in, $out, $post_row['MESSAGE']);
 		$event['post_row'] = $post_row;
 	}
 
