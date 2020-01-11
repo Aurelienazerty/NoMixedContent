@@ -8,7 +8,7 @@
  *
  */
 
-namespace Aurelienazerty\NoMixedContent\event;
+namespace aurelienazerty\nomixedcontent\event;
 
 /**
  * Event listener
@@ -25,7 +25,7 @@ class listener implements EventSubscriberInterface
 	 * Constructor
 	 *
 	 * @param \phpbb\config\config	$config	Config object
-	 * @return \Aurelienazerty\DisplayLastPost\event\listener
+	 * @return \aurelienazerty\DisplayLastPost\event\listener
 	 * @access public
 	 */
 	public function __construct(\phpbb\config\config $config)

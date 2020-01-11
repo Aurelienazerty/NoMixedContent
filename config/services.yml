@@ -1,6 +1,6 @@
 services:
-    Aurelienazerty.NoMixedContent.listener:
-        class: Aurelienazerty\NoMixedContent\event\listener
+    aurelienazerty.nomixedcontent.listener:
+        class: aurelienazerty\nomixedcontent\event\listener
         arguments:
             - '@config'
         tags:

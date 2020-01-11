@@ -1,5 +1,5 @@
 {
-    "name": "Aurelienazerty/NoMixedContent",
+    "name": "aurelienazerty/nomixedcontent",
     "type": "phpbb-extension",
     "description": "Modifie les post pour passer tout en https, en ce qui concerne le site.",
     "homepage": "http://www.team-azerty.com",
@@ -9,7 +9,7 @@
     "license": "GPL-2.0",
     "authors": [
         {
-            "name": "Aurelienazerty",
+            "name": "aurelienazerty",
             "homepage": "http://www.team-azerty.com",
             "role": "Main developer"
         }
