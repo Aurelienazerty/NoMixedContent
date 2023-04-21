@@ -63,8 +63,8 @@ class listener implements EventSubscriberInterface
 		$in = array();
 		$out = array();
 		
-		$in[] = 'http://www.team-azerty.com'; $out[] = 'https://www.team-azerty.com';
-		$in[] = 'http://team-azerty.com'; $out[] = 'https://www.team-azerty.com';
+		$in[] = 'https://www.team-azerty.com'; $out[] = 'https://www.team-azerty.com';
+		$in[] = 'https://team-azerty.com'; $out[] = 'https://www.team-azerty.com';
 		/*$in[] = 'https://'; $out[] = '//';
 		$in[] = 'http://'; $out[] = '//';*/
 		
